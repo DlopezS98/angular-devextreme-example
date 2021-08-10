@@ -6,6 +6,7 @@ import { SingleCardComponent } from './layouts/single-card/single-card.component
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarNavigationComponent } from './components/sidebar-navigation/sidebar-navigation.component';
 import { DevexpressComponentsModule } from './devexpress-components/devexpress-components.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { DevexpressComponentsModule } from './devexpress-components/devexpress-c
     SingleCardComponent,
     HeaderComponent,
     SidebarNavigationComponent,
+    FooterComponent
   ],
   imports: [CommonModule, DevexpressComponentsModule],
   exports: [
@@ -21,7 +23,8 @@ import { DevexpressComponentsModule } from './devexpress-components/devexpress-c
     SideNavToolbarComponent,
     SingleCardComponent,
     HeaderComponent,
-    SidebarNavigationComponent
+    SidebarNavigationComponent,
+    FooterComponent
   ],
 })
 export class SharedModule {}
