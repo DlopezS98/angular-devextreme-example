@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { DevexpressComponentsModule } from '../shared/devexpress-components/devexpress-components.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -11,7 +13,9 @@ import { RegisterComponent } from './register/register.component';
     RegisterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DevexpressComponentsModule,
+    SharedModule
   ]
 })
 export class AuthModule { }

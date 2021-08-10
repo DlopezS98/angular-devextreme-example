@@ -1,1 +1,6 @@
-<p>side-nav-toolbar works!</p>
+<app-header
+  class="layout-header"
+  [menuToggleEnabled]="true"
+  (menuToggle)="menuOpened = !menuOpened;"
+  [title]="title">
+</app-header>

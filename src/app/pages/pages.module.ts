@@ -4,6 +4,7 @@ import { PagesComponent } from './pages.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { EmployeesReportComponent } from './employees-report/employees-report.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { EmployeesReportComponent } from './employees-report/employees-report.co
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

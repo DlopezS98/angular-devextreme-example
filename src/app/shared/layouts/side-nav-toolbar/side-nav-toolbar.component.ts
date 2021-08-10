@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavToolbarComponent implements OnInit {
 
+  menuOpened!: boolean;
+  public title: string = "Angular + DevExtreme"
   constructor() { }
 
   ngOnInit(): void {

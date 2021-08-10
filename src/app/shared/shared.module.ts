@@ -5,8 +5,7 @@ import { SideNavToolbarComponent } from './layouts/side-nav-toolbar/side-nav-too
 import { SingleCardComponent } from './layouts/single-card/single-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarNavigationComponent } from './components/sidebar-navigation/sidebar-navigation.component';
-
-
+import { DevexpressComponentsModule } from './devexpress-components/devexpress-components.module';
 
 @NgModule({
   declarations: [
@@ -14,10 +13,15 @@ import { SidebarNavigationComponent } from './components/sidebar-navigation/side
     SideNavToolbarComponent,
     SingleCardComponent,
     HeaderComponent,
+    SidebarNavigationComponent,
+  ],
+  imports: [CommonModule, DevexpressComponentsModule],
+  exports: [
+    PageNotFoundComponent,
+    SideNavToolbarComponent,
+    SingleCardComponent,
+    HeaderComponent,
     SidebarNavigationComponent
   ],
-  imports: [
-    CommonModule
-  ]
 })
-export class SharedModule { }
+export class SharedModule {}
