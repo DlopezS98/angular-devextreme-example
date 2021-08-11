@@ -1,1 +1,22 @@
-<p>employees-report-v2 works!</p>
+<div id="app-container">
+    <dx-data-grid [dataSource]="employees" [height]="450" [showBorders]="true" (onSaving)="onSaving($event)" >
+        <dxo-group-panel [visible]="true"></dxo-group-panel>
+        <dxo-header-filter [visible]="true"></dxo-header-filter>
+        <dxo-filter-row [visible]="true"></dxo-filter-row>
+        <dxo-editing mode="popup" [allowAdding]="true" [allowUpdating]="true" [allowDeleting]="true">
+        </dxo-editing>
+        <dxi-column dataField="FullName">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column dataField="Position">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column dataField="BirthDate" dataType="date"></dxi-column>
+        <dxi-column dataField="HireDate" dataType="date">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column dataField="City">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+    </dx-data-grid>
+</div>
