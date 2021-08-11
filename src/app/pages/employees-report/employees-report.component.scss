@@ -1,0 +1,26 @@
+.employee-photo {
+  height: 140px;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.employee-notes {
+  text-align: justify;
+  white-space: normal;
+}
+
+#dataGrid {
+  height: auto;
+}
+
+#app-container {
+  width: 100%;
+  position: relative;
+  padding: 24px;
+}
+
+#selected-employee {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

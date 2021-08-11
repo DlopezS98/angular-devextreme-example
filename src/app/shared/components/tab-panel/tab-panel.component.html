@@ -1,0 +1,7 @@
+<dx-tab-panel *ngIf="tabs.length > 0">
+    <ng-container *ngFor="let tab of tabs">
+        <dxi-item [title]="tab.title" [icon]="tab.icon" [badge]="tab.badge">
+            <ng-content [select]="tab.contentSelector"></ng-content>
+        </dxi-item>
+    </ng-container>
+</dx-tab-panel>

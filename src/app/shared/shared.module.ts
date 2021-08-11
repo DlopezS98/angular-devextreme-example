@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarNavigationComponent } from './components/sidebar-navigation/sidebar-navigation.component';
 import { DevexpressComponentsModule } from './devexpress-components/devexpress-components.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { TabPanelComponent } from './components/tab-panel/tab-panel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SingleCardComponent,
     HeaderComponent,
     SidebarNavigationComponent,
-    FooterComponent
+    FooterComponent,
+    TabPanelComponent
   ],
   imports: [CommonModule, DevexpressComponentsModule],
   exports: [
@@ -24,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SingleCardComponent,
     HeaderComponent,
     SidebarNavigationComponent,
-    FooterComponent
+    FooterComponent,
+    TabPanelComponent
   ],
 })
 export class SharedModule {}

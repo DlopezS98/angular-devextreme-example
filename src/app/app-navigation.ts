@@ -8,6 +8,11 @@ export const navigation = [
     text: 'Dashboard',
     path: '/main/dashboard',
     icon: 'chart'
+  },
+  {
+    text: 'Employees',
+    path: '/main/employees-report',
+    icon: 'group'
   }
   // {
   //   text: 'Examples',
