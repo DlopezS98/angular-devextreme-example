@@ -6,7 +6,7 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
 import { PagesRoutingModule } from './pages-routing.module';
 import { EmployeesReportComponent } from './employees-report/employees-report.component';
 import { SharedModule } from '../shared/shared.module';
-import { DevexpressComponentsModule } from '../shared/devexpress-components/devexpress-components.module';
+import { DevExtremeComponentsModule } from '../shared/devextreme-components/devextreme-components.module';
 import { EmployeesReportV2Component } from './employees-report-v2/employees-report-v2.component';
 import { MainEmployeeReportComponent } from './main-employee-report/main-employee-report.component';
 
@@ -24,7 +24,7 @@ import { MainEmployeeReportComponent } from './main-employee-report/main-employe
     CommonModule,
     PagesRoutingModule,
     SharedModule,
-    DevexpressComponentsModule
+    DevExtremeComponentsModule
   ]
 })
 export class PagesModule { }

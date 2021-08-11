@@ -5,7 +5,7 @@ import { SideNavToolbarComponent } from './layouts/side-nav-toolbar/side-nav-too
 import { SingleCardComponent } from './layouts/single-card/single-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarNavigationComponent } from './components/sidebar-navigation/sidebar-navigation.component';
-import { DevexpressComponentsModule } from './devexpress-components/devexpress-components.module';
+import { DevExtremeComponentsModule } from './devextreme-components/devextreme-components.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { TabPanelComponent } from './components/tab-panel/tab-panel.component';
 
@@ -19,7 +19,7 @@ import { TabPanelComponent } from './components/tab-panel/tab-panel.component';
     FooterComponent,
     TabPanelComponent
   ],
-  imports: [CommonModule, DevexpressComponentsModule],
+  imports: [CommonModule, DevExtremeComponentsModule],
   exports: [
     PageNotFoundComponent,
     SideNavToolbarComponent,

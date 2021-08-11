@@ -6,7 +6,6 @@ import { DxScrollViewModule } from 'devextreme-angular/ui/scroll-view';
 import { DxButtonModule } from 'devextreme-angular/ui/button';
 import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 import { DxDrawerModule } from 'devextreme-angular/ui/drawer';
-// import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
 import { DxTabPanelModule } from 'devextreme-angular/ui/tab-panel';
 
 @NgModule({
@@ -23,4 +22,4 @@ import { DxTabPanelModule } from 'devextreme-angular/ui/tab-panel';
     DxTabPanelModule
   ]
 })
-export class DevexpressComponentsModule { }
+export class DevExtremeComponentsModule { }
